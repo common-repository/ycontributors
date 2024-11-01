@@ -1,0 +1,94 @@
+/* 
+Plugin Name: yContributors
+Plugin URI: http://www.social-ink.net/blog/ycontributors-wordpress-plugin-for-author-archives-and-contributor-index-with-photos-and-excerpts
+Author URI: http://yonatanr.net
+Version: 0.5
+Author: Yonatan Reinberg
+Description: Creates pretty searchable member/contributor indexes.  Dont forget to <a href="options-general.php?page=yContributors">set it up</a>.
+ 
+ If you like this or need support, visit us at http://social-ink.net
+ 
+Copyright 2011  Yonatan Reinberg (email : yoni [a t ] s o cia l-ink DOT net) - http://social-ink.net
+*/
+
+/* GENERAL RULES */
+
+	.yc_clearfix {
+		clear:both;
+	}
+
+/* IN PAGE STYLING */
+
+	.ycontributors {
+		color: #053C4F;
+	}
+
+	#ycontrib_search {
+		border: 1px solid #053C4F;
+		padding: 4px;
+	}
+	
+		.ycontrib_oneauthor {
+			border-bottom: 2px solid #EFEFEF;
+			margin-bottom: 30px;
+			padding-bottom: 10px;
+			min-height:100px;
+		}
+
+			
+	/* TABLE FORMAT */
+	
+	.ycontributors_table {
+		font-family: helvetica,arial,sans-serif;
+	}
+	
+		.ycontributors_table th {
+			background: none repeat scroll 0 0 #EFEFEF;
+			border: 1px solid #CCCCCC;
+			padding: 10px 15px;
+			color:#111;
+		}
+		
+		.ycontributors_table tr {
+			border: 1px solid #EFEFEF;
+		}		
+		
+		.ycontributors_table td {
+			border-left: 1px solid #EFEFEF;
+			padding: 15px;
+		}		
+		
+		.ycontributors_table td.hovered {
+			background: #EFEFEF;
+			color:black;
+			border-left:1px solid white;
+		}
+
+
+/* SEARCH AND AUTOCOMPLETE OVERWRITES */
+
+	#clearcontribs {
+	    border: 1px solid #053C4F;
+		padding: 3px;
+		color:#053C4F;
+	}
+	
+	ul.ui-autocomplete {
+		border: 1px solid #CCCCCC;
+		color:black !important;
+		width:150px !important;
+		list-style:none;
+		margin-left:15px;
+		
+	}
+
+		ul.ui-autocomplete li {
+			background:#EFEFEF;
+			padding: 5px;
+			cursor:pointer;
+		}	
+		
+		ul.ui-autocomplete li a {
+			color:black;
+			font-size:14px;
+		}	
